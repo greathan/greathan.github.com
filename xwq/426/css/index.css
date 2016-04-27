@@ -159,6 +159,7 @@ i, em{font-style: normal;}
 .flight .flight-info {
     float: left;
     width: 865px;
+    position: relative;
 }
 .flight .flight-info .bottom {
     border-bottom: 1px dashed #ccc;
@@ -167,6 +168,13 @@ i, em{font-style: normal;}
     height: 70px;
     padding-left: 35px;
 }
+
+.flight .flight-info .air-logo {
+    display: inline-block;
+    position: absolute;
+    margin-left: -21px;
+}
+
 
 .c1,.c2,.c3,.c4,.c5 {
     float:left;
