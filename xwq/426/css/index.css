@@ -20,6 +20,7 @@ input {
 table { 
 	border-collapse: collapse; 
 }
+
 a { 
 	color: #0066CC; 
 	text-decoration: none; 
@@ -27,8 +28,9 @@ a {
 a:hover { 
 	text-decoration: underline; 
 }
-h1, h2, h3, h4, h5, h6 { 
-	font-family: Simsun,sans-serif; 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+	font-family: Microsoft Yahei,Simsun,sans-serif; 
 }
 ol, ul, li { 
 	list-style: none; 
@@ -100,7 +102,7 @@ i, em{font-style: normal;}
     height: 37px;
 }
 .bar .loc span{
-	font-size: 16px;
+	font-size: 12px;
     font-weight: normal;
 	padding-left: 10px;
 	line-height: 50px;
@@ -266,21 +268,40 @@ i, em{font-style: normal;}
     float: left;
     width: 524px;
     height: 270px;
+    position: relative;
 
 }
-.pack-pic h3 {
+.pack-pic .title {
+    z-index: 2;
     position: absolute;
-    text-align: center;
-    font-size: 25px;
-    color: #fff;
-    background: #83a930;
-    padding: 10px 20px;
-    width: 165px;
-    font-family: "Microsoft Yahei";
 }
+.pack-pic h3 {
+    position: relative;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    line-height: 47px;
+    width: 165px;
+    margin-top:-8px;
+    background: #83a931;
+}
+.pack-pic .corner {
+    position: absolute;
+    right: -13px;
+    top:0;
+    background:url(../images/pack-corner.png) no-repeat right top;
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height:47px;
+
+}
+
 .pack-pic .img{
     height: 260px;
     box-shadow: 5px 10px 20px #e1e1e1;
+    position: absolute;
+    z-index: 1;
 }
 .package .pack-item{
     height: 270px;
@@ -328,9 +349,9 @@ i, em{font-style: normal;}
 }
 .food {
     width: 100%;
-    margin: 0;
     padding: 0;
     overflow: hidden;
+    margin-bottom: 40px;
 }
 .food .title {
     font-size: 24px;
@@ -400,23 +421,45 @@ i, em{font-style: normal;}
     border-radius: 10px;
     background-color: #7ebbfe;
 }
-.food .list2 {
-    float: left;
+
+
+.food img {
+    display: block;
 }
-.food div {
-    position: relative;
-    margin: 2px;
-    cursor: pointer;
+.food .pics {
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 5px 4px 4px 5px;
 }
-.food .list3 {
-    float: left;
+
+.food .col, .food .col, .food .col, .food .col {
+    float:left;
+    margin-right:5px;
 }
-.food .list4 {
-    float: left; 
+.food .last {
+    margin-right: 0;
 }
-.food .list5 {
-    float: left;
+
+.food .item {
+    cursor: pointer;;
 }
+.food .row .item {
+    float:left;
+}
+
+.food .col .first {
+    margin-bottom: 5px;
+}
+
+.food .row .item.first {
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+.food .item:hover .button {
+    display: block;
+}
+
 .map{
     height: 400px;
 }
@@ -435,6 +478,11 @@ i, em{font-style: normal;}
 .map-nav ul{
     list-style: none;
 }
-.map-nav ul ol{
-    list-style: none;
+
+.map-nav ul li{
+    font-family: Microsoft Yahei;
+    font-size: 14px;
+    line-height: 45px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
 }
