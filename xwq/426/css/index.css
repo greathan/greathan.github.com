@@ -73,6 +73,14 @@ i, em{font-style: normal;}
 	margin: auto;
     padding-bottom: 50px;
 }
+
+
+.pr,.rmb {
+    font-family: Arial;
+}
+
+
+
 .detail{
 	margin-bottom: 50px;
 }
@@ -176,7 +184,7 @@ i, em{font-style: normal;}
 }
 
 
-.c1,.c2,.c3,.c4,.c5 {
+.c1,.c2,.c3,.c4,.c5, .c6 {
     float:left;
 }
 
@@ -230,17 +238,52 @@ i, em{font-style: normal;}
     padding: 30px 0 30px 35px;
 }
 .hotel .hotel-info .c2 {
-    width: 355px;
+    line-height: 115px;
+    width: 97px;
+    padding: 20px 0;
 }
 .hotel .hotel-info .c3 {
-    width: 200px;
+    width: 185px;
+    padding-left: 10px;
+    padding-top:20px;
+    line-height: 20px
 }
 .hotel .hotel-info .c4{
-	float: left;
+	width: 70px;
+    padding-top:20px;
+
 }
+.ico-wifi, .ico-park, .ico-food, .ico-ent {
+    display: inline-block;
+    width: 16px;
+    height: 14px;
+    margin-right: -5px;
+}
+
+.ico-wifi {
+    background: url(../images/wifi.png) no-repeat;
+
+}
+.ico-park {
+    background: url(../images/tingche.png) no-repeat;
+    
+}
+.ico-food {
+    background: url(../images/chazi.png) no-repeat;
+
+}
+
+.ico-ent {
+    background: url(../images/zuowei.png) no-repeat;
+
+}
+
 .hotel .hotel-info .c5 {
+    width:189px;
+    padding-top:62px;
+}
+.hotel .hotel-info .c6 {
     line-height: 115px;
-    width: 120px;
 }
 .btn-blue{
     color: #fff;
@@ -252,24 +295,27 @@ i, em{font-style: normal;}
     background: #0083d1;
     text-decoration: none;
 }
-.price {
+.detail .price {
     height: 50px;
     line-height: 50px;
     background: #f0f0f0;
     padding-right: 20px;
 }
-.price .btn {
+.detail .price .btn {
     float: right;
+    padding-top: 5px;
 }
 .btn-orange {
-    width: 120px;
+    width: 80px;
     height: 38px;
-    padding: 6px 20px;
+    padding: 0px 20px;
     color: #fff;
     background: #fc8738;
+    line-height: 40px;
     border-radius: 3px;
     font-size: 20px;
     font-family: "Microsoft Yahei";
+    display: inline-block;
 }
 .btn-orange:hover {
     background: #f60;
@@ -281,8 +327,7 @@ i, em{font-style: normal;}
     margin-right: 45px;
     float: right;
 }
-.price .rmb, .price .pr {
-    font-family: Arial;
+.detail .price .rmb, .detail .price .pr {
     color: #fc6e1a;
 }
 .price .save .pr {
@@ -292,9 +337,7 @@ i, em{font-style: normal;}
     margin-right: 25px;
     float: right;
 }
-.price .rmb, .price .pr {
-    color: #fc6e1a;
-}
+
 .price .total .pr {
     font-size: 20px;
 }
@@ -363,10 +406,78 @@ i, em{font-style: normal;}
     font-family: "Microsoft Yahei";
     color: #249de6;
     font-size: 20px;
+
 }
 .trip{
     list-style: none;
+    margin:20px 0;
 }
+
+.trip li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.trip .l {
+    float: left;
+    width: 278px;
+}
+.trip .r {
+    float:left;
+}
+.trip .no-ico {
+    text-indent: 20px;
+}
+
+.ico-out,.ico-ret,.ico-reside {
+    width:14px;
+    height: 14px;
+    border-radius:2px;
+    color:#fff;
+    padding: 0 2px;
+}
+.ico-out {
+    background: #2cabcc;
+}
+.ico-ret{
+    background: #639cea;
+}
+.ico-reside {
+    background: #ecb42d;
+}
+
+
+.pack-info .book {
+    height: 40px;
+}
+
+.pack-info .book .order-pr {
+    color:#999;
+    font-size: 14px;
+}
+
+.pack-info .book .rmb {
+    color:#f60;
+    font-size: 24px;
+}
+.pack-info .book .orange-pr {
+    color: #f60;
+    font-size: 36px;
+}
+.pack-info .book  .start {
+    font-size: 16px;
+}
+
+.pack-info .book .price {
+    float:left;
+    width: 277px;
+}
+.pack-info .book .btn {
+    float: left;
+    padding-top: 5px;
+}
+
+
 .destination {
     margin-bottom: 40px;
 }
