@@ -1,0 +1,440 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button { 
+	margin: 0; padding: 0; 
+}
+body { 
+	background-color: #FFF; 
+	font-size: 12px; 
+	line-height: 1.5; 
+	font-family: Simsun,sans-serif; 
+	color: #333; 
+}
+img, fieldset { 
+	border: 0; 
+	margin: 0; 
+	padding: 0; 
+}
+input { 
+	font-size: 12px; 
+	outline: none; 
+}
+table { 
+	border-collapse: collapse; 
+}
+a { 
+	color: #0066CC; 
+	text-decoration: none; 
+}
+a:hover { 
+	text-decoration: underline; 
+}
+h1, h2, h3, h4, h5, h6 { 
+	font-family: Simsun,sans-serif; 
+}
+ol, ul, li { 
+	list-style: none; 
+}
+dfn { 
+	font-style: normal; 
+	font-family: Arial; 
+}
+input[type="text"]:focus { 
+	background-color: #f1f9ff; 
+	border-width: 1px; 
+	border-style: solid; 
+	border-color: #5d9de5 #67a1e2 #67a1e2 #5d9de5; 
+	border-color: rgba(93, 157, 229, 0.9); 
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset; 
+}
+select { 
+	vertical-align: middle; 
+	font-family: Tahoma,Simsun; 
+}
+i, em{font-style: normal;}
+.clearfix { 
+	*zoom: 1; 
+}
+.clearfix:after { 
+	clear: both; 
+	content: "."; 
+	display: block; 
+	height: 0; 
+	overflow: hidden; 
+}
+.page{
+	background: url(../images/bg2.png) no-repeat top;
+	width: 100%;
+	max-width: 1920px;
+	height: 1006px;
+}
+.content{
+	width: 1000px;
+	margin: auto;
+}
+.detail{
+	margin-bottom: 50px;
+}
+.switch-bar{	
+	width: 1000px;
+	height: 50px;
+	background-color: #feeeda;
+	margin-top: 255px;
+	font-family: "Microsoft Yahei";
+}
+.bar{
+	width: 143px;
+	height: 50px;
+	background-color: #ffa63c;
+	float: left;	
+}
+.bar .loc{
+	font-size: 20px;
+	padding-left: 20px;
+	color: #fff;
+	font-family: "Microsoft Yahei";
+}
+.bar .loc .ico-pos {
+    background: url(../images/dingwei.png)no-repeat;
+    display:inline-block;
+    vertical-align: middle;
+    width:30px;
+    height: 37px;
+}
+.bar .loc span{
+	font-size: 16px;
+    font-weight: normal;
+	padding-left: 10px;
+	line-height: 50px;
+	color: #fff;
+	font-family: "Microsoft Yahei";
+}
+.switch-bar .controls {
+    float: left;
+    width: 837px;
+    padding-left: 20px;
+}
+.switch-bar .controls .control {
+    float: left;
+    line-height: 50px;
+    font-size: 14px;
+    margin: 0 20px;
+}
+.controls .control label {
+    display: inline-block;
+    margin-right: 10px;
+}
+.date {
+    height: 20px;
+    border: 1px solid #ccc;
+    width: 84px;
+    text-align: center;
+}
+.flight {
+    overflow: hidden;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #fff;
+}
+.flight .title {
+    float: left;
+    line-height: 135px;
+    width: 135px;
+    text-align: center;
+}
+.flight .flight-info {
+    float: left;
+    width: 865px;
+}
+.flight .flight-info .bottom {
+    border-bottom: 1px dashed #ccc;
+}
+.flight .flight-info .seg{
+    height: 70px;
+    padding-left: 35px;
+}
+.flight .flight-info .c1 {
+    float: left;
+    line-height: 70px;
+    width: 135px;
+}
+.flight .flight-info .c2 {
+    float: left;
+    padding: 17px 0px;
+    width: 220px;
+}
+.flight .flight-info .c3 {
+    float: left;
+    padding: 17px 0px;
+    width: 190px;
+}
+.flight .flight-info .c4 {
+    float: left;
+    line-height: 70px;
+    width: 145px;
+}
+.flight .flight-info .c5 {
+    float: left;
+    line-height: 70px;
+    width: 120px;
+}
+.hotel {
+    overflow: hidden;
+    background-color: #fff;
+}
+.hotel .title {
+    float: left;
+    line-height: 115px;
+    width: 135px;
+    text-align: center;
+}
+.hotel .hotel-info {
+    width: 865px;
+    height: 115px;
+    float: left;
+}
+.hotel .hotel-info .c1 {
+    width: 140px;
+    padding: 30px 0 30px 35px;
+}
+.hotel .hotel-info .c2 {
+    width: 355px;
+}
+.hotel .hotel-info .c3 {
+    width: 200px;
+}
+.hotel .hotel-info .c4{
+	float: left;
+}
+.hotel .hotel-info .c5 {
+    line-height: 115px;
+    width: 120px;
+}
+.c5 a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #2b9cdf;
+    padding: 5px;
+    border-radius: 5%;
+}
+.price {
+    height: 50px;
+    line-height: 50px;
+    background: #f0f0f0;
+    padding-right: 20px;
+}
+.price .btn {
+    float: right;
+}
+.btn-orange {
+    width: 120px;
+    height: 38px;
+    padding: 6px 20px;
+    color: #fff;
+    background: #fc8738 url() no-repeat;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: "Microsoft Yahei";
+}
+.price .save {
+    margin-right: 45px;
+    float: right;
+}
+.price .rmb, .price .pr {
+    font-family: Arial;
+    color: #fc6e1a;
+}
+.price .save .pr {
+    font-size: 18px;
+}
+.price .total {
+    margin-right: 25px;
+    float: right;
+}
+.price .rmb, .price .pr {
+    color: #fc6e1a;
+}
+.price .total .pr {
+    font-size: 20px;
+}
+.package {
+    font-family: "Microsoft Yahei";
+    margin-bottom: 40px;
+}
+.package .pack-item {
+    height: 270px;   
+    margin-bottom: 50px;
+}
+.package .pack-item .pack-pic {
+    float: left;
+    width: 524px;
+    height: 270px;
+
+}
+.pack-pic h3 {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    background: #83a930;
+    padding: 10px 20px;
+    width: 165px;
+    font-family: "Microsoft Yahei";
+}
+.pack-pic .img{
+    height: 260px;
+    box-shadow: 5px 10px 20px #e1e1e1;
+}
+.package .pack-item{
+    height: 270px;
+    background-color: #fff;
+}
+
+.package .pack-item .pack-info {
+    float: left;
+    width: 414px;
+    padding: 20px 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 229px;
+}
+.pack-info h3 {
+    font-family: "Microsoft Yahei";
+    color: #249de6;
+    font-size: 18px;
+}
+.trip{
+    list-style: none;
+}
+.destination {
+    margin-bottom: 40px;
+}
+.destination .title {
+    height: 43px;
+    border-bottom: 2px solid #1c3b7b;
+}
+.destination .title h3 {
+    float: left;
+    background: #1c3b7b;
+    font-size: 24px;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    padding: 5px 20px 4px 12px;
+    width: 56px;
+}
+.destination .title .desc {
+    float: left;
+    font-size: 14px;
+    color: #8dafb8;
+    width: 904px;
+}
+.food {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.food .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 50px;
+    height: 50px;
+    text-indent: 8px;
+    color: #fff;
+    background-color: #ca8832;
+}
+.food .title span {
+    font-size: 18px;
+    font-weight: normal;
+}
+.food .list1 {
+    float: left;
+}
+.food .name {
+    font-size: 18px;
+    line-height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    text-indent: 8px;
+    color: #fff;
+    background-color: rgba(0,0,0,.7);
+}
+.food .button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+.food .button .a {
+    line-height: 30px;
+    display: block;
+    float: left;
+    width: 48%;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #f97da1;
+}
+.food .button .b {
+    line-height: 30px;
+    display: block;
+    float: right;
+    width: 48%;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #7ebbfe;
+}
+.food .list2 {
+    float: left;
+}
+.food div {
+    position: relative;
+    margin: 2px;
+    cursor: pointer;
+}
+.food .list3 {
+    float: left;
+}
+.food .list4 {
+    float: left; 
+}
+.food .list5 {
+    float: left;
+}
+.map{
+    height: 400px;
+}
+.map-box {
+    float: left;
+    width: 748px;
+    border: 1px solid #ddd;
+    height: 398px;
+}
+.map-nav {
+    float: left;
+    border: 1px solid #ddd;
+    height: 398px;
+    width: 248px;
+}
+.map-nav ul{
+    list-style: none;
+}
+.map-nav ul ol{
+    list-style: none;
+}
