@@ -141,7 +141,21 @@ i, em{font-style: normal;}
     line-height: 135px;
     width: 135px;
     text-align: center;
+    position: relative;
 }
+
+.flight .title .ico-flight {
+    background: url(../images/flight.png);
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top:30px;
+    left: 60px;
+
+}
+
+
 .flight .flight-info {
     float: left;
     width: 865px;
@@ -153,28 +167,28 @@ i, em{font-style: normal;}
     height: 70px;
     padding-left: 35px;
 }
+
+.c1,.c2,.c3,.c4,.c5 {
+    float:left;
+}
+
 .flight .flight-info .c1 {
-    float: left;
     line-height: 70px;
     width: 135px;
 }
 .flight .flight-info .c2 {
-    float: left;
     padding: 17px 0px;
     width: 220px;
 }
 .flight .flight-info .c3 {
-    float: left;
     padding: 17px 0px;
     width: 190px;
 }
 .flight .flight-info .c4 {
-    float: left;
     line-height: 70px;
     width: 145px;
 }
 .flight .flight-info .c5 {
-    float: left;
     line-height: 70px;
     width: 120px;
 }
@@ -187,6 +201,16 @@ i, em{font-style: normal;}
     line-height: 115px;
     width: 135px;
     text-align: center;
+    position: relative;
+}
+.hotel .title .ico-hotel {
+    background: url(../images/hotel.png);
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    top:25px;
+    left: 60px;
 }
 .hotel .hotel-info {
     width: 865px;
@@ -210,12 +234,15 @@ i, em{font-style: normal;}
     line-height: 115px;
     width: 120px;
 }
-.c5 a{
+.btn-blue{
     color: #fff;
-    text-decoration: none;
-    background-color: #2b9cdf;
+    background: #2da1e6;
     padding: 5px;
     border-radius: 5%;
+}
+.btn-blue:hover {
+    background: #0083d1;
+    text-decoration: none;
 }
 .price {
     height: 50px;
@@ -231,11 +258,17 @@ i, em{font-style: normal;}
     height: 38px;
     padding: 6px 20px;
     color: #fff;
-    background: #fc8738 url() no-repeat;
+    background: #fc8738;
     border-radius: 3px;
     font-size: 20px;
     font-family: "Microsoft Yahei";
 }
+.btn-orange:hover {
+    background: #f60;
+    text-decoration: none;
+}
+
+
 .price .save {
     margin-right: 45px;
     float: right;
@@ -321,7 +354,7 @@ i, em{font-style: normal;}
 .pack-info h3 {
     font-family: "Microsoft Yahei";
     color: #249de6;
-    font-size: 18px;
+    font-size: 20px;
 }
 .trip{
     list-style: none;
@@ -330,46 +363,115 @@ i, em{font-style: normal;}
     margin-bottom: 40px;
 }
 .destination .title {
+
     height: 43px;
     border-bottom: 2px solid #1c3b7b;
 }
 .destination .title h3 {
+    position: relative;
     float: left;
     background: #1c3b7b;
-    font-size: 24px;
+    font-size: 28px;
     font-family: "Microsoft Yahei";
     color: #fff;
-    padding: 5px 20px 4px 12px;
+    line-height: 45px;
+    padding-left: 12px;
+    padding-right: 20px;
     width: 56px;
+}
+.destination .title h3 .corner {
+    position: absolute;
+    right: -13px;
+    top:0;
+    width: 15px;
+    height: 47px;
+
+    display: inline-block;
+
+    background: url(../images/dest-corner.png) no-repeat;
+
+
 }
 .destination .title .desc {
     float: left;
     font-size: 14px;
     color: #8dafb8;
-    width: 904px;
+    width: 896px;
+    margin-left: 15px;
 }
+
+.destination .pics {
+    overflow: hidden;
+    border:1px solid #ddd;
+    border-top:none;
+    padding: 15px;
+}
+
+.destination img {
+    display: block;
+}
+
+.destination .pics .box {
+    float:left;
+    margin-right:15px;
+}
+.destination .pics .box .item {
+    margin-bottom: 10px;
+}
+.destination .pics .box .last {
+    margin-bottom: 0;
+}
+.destination .pics .demo {
+    float:left;
+}
+.destination .pics .demo img {
+    margin-bottom: 10px;
+}
+.destination .demo-desc p {
+    width: 590px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
 .food {
     width: 100%;
     padding: 0;
     overflow: hidden;
     margin-bottom: 40px;
+    font-family: Microsoft Yahei;
 }
 .food .title {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 50px;
-    height: 50px;
+    position: relative;
+    font-size: 28px;
+    line-height: 49px;
+    height: 49px;
     text-indent: 8px;
     color: #fff;
     background-color: #ca8832;
+    margin-left: 15px;
+
 }
+
+.food .title .corner {
+    position: absolute;
+    left: -14px;
+    top:0;
+    display: inline-block;
+    height: 49px;
+    width: 15px;
+    background: url(../images/food-corner.png) no-repeat;
+
+}
+
+
 .food .title span {
     font-size: 18px;
-    font-weight: normal;
 }
-.food .list1 {
-    float: left;
-}
+
 .food .name {
     font-size: 18px;
     line-height: 30px;
@@ -429,6 +531,7 @@ i, em{font-style: normal;}
 }
 .food .pics {
     border: 1px solid #ddd;
+    border-top: none;
     overflow: hidden;
     padding: 5px 4px 4px 5px;
 }
