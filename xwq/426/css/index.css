@@ -71,6 +71,7 @@ i, em{font-style: normal;}
 .content{
 	width: 1000px;
 	margin: auto;
+    padding-bottom: 50px;
 }
 .detail{
 	margin-bottom: 50px;
