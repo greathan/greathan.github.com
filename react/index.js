@@ -21,10 +21,8 @@ var FlightList = React.createClass({
 		for (var key in this.props.flightInfo) {
 
 			var flt = this.props.flightInfo[key];
-			flights.push(
-				<Flight co={flt.co}>
-				</Flight
-			)
+			var flight = <Flight co={flt.co} />
+			flights.push(flight);
 
 		}
 
@@ -51,6 +49,6 @@ var Box = React.createClass({
 });
 
 ReactDOM.render(
-  <Box url="data.json" />,
+  <Box source="data.json" />,
   document.getElementById('content')
 );
