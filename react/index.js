@@ -49,6 +49,6 @@ var Box = React.createClass({
 });
 
 ReactDOM.render(
-  <Box source="data.json" />,
+  <Box url="data.json" />,
   document.getElementById('content')
 );
